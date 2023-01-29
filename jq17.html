@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> jq..sibling </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"> </script>
+
+</head>
+<body>
+<div>  
+<p>zzzzz</p>
+<h2>aaaaa</h2>
+<h3>llllll</h3>
+<h2>sssssssss</h2>
+</div>
+
+<div><h2> sirf pehle div ke siblings ko hi pakdega</h2></div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $("h2").siblings().css({"color" : "green","border" : "2px solid red" })
+
+});
+</script>
+
+</body>
+</html>

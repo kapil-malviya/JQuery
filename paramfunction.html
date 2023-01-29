@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>param function</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"> </script>
+</head>
+<body>
+
+<p id="p1">  </p>
+<button>click me</button>
+
+<script type="text/javascript">
+$(document).ready(function(){
+student=new Object()
+student.name="Anil"; 
+student.rollno="1112";
+student.class="12th";
+$("button").click(function(){
+ $("#p1").text($.param(student));
+
+});
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jq10</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"> </script>
+<style type="text/css">
+.a{background-color:red; height:400px; width:600px;}
+</style>
+
+</head>
+<body>
+	<script type="text/javascript">
+$(function(){
+	$('button').click(function(){
+		$(this).before("<div class='a'>new box</div>")
+	})
+})
+</script>
+<button>click</button>
+<p> single quote will work inside the class of div tag </p>
+
+
+
+
+
+</body>
+</html>

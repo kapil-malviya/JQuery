@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jq User Interface</title>
+
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<style type="text/css">
+#dragable{width:300px; height:400px; padding:0.5em; background-color:seagreen;}
+
+</style>
+
+</head>
+<body>
+<div id="dragable" class="ui-widget-content">
+<p>
+i am dragable  em=height aur width ke according words ko manage karta hai // relative to parent
+{em rem vh vw}
+</p>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $("#dragable").draggable()
+
+});
+
+</script>
+
+</body>
+</html>
