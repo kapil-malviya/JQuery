@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> jq overwriting css property - (id will overwrite p) </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $('p').css("background-color","orange");
+ $('p').css("border","2px solid green");
+ $('p').css("padding","12px");
+ $('p').css("margin","20px");
+ $('p').css("border-radius","18px");
+
+ $('#xx').css("background-color","tomato");
+ $('#xx').css("border","3px solid black");
+ $('#xx').css("padding","20px");
+ $('#xx').css("margin","2px");
+ // $('#xx').css("border-radius","1px");
+
+
+ $('h2').css("color","red");
+
+});
+
+</script>
+
+</head>
+<body>
+
+<p id="xx"> jQuery is the “Write Less, Do More” JavaScript library. It is not a programming language, but rather a tool used to make writing common JavaScript tasks more concise. jQuery has the added benefit of being cross-browser compatible, meaning you can be certain the output of your code will render as intended in any modern browser. </p>
+
+
+
+
+
+
+<h2> 
+
+" id will over write p "
+
+</h2>
+
+</body>
+</html>
