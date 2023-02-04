@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> toggle function on button </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+// $(document).ready(function(){
+
+// $('#x').click(function(){
+// $('p').hide()
+// });
+
+// $('#xx').click(function(){
+// $('p').show()
+// });
+
+// });
+
+$(document).ready(function(){
+$('#x').click(function(){
+
+$('p').toggle()
+});
+
+});
+
+
+
+</script>
+
+
+
+
+</head>
+<body>
+<button id="x">click</button>
+
+<p>
+One big advantage of using the hosted jQuery from Google:
+
+Many users already have downloaded jQuery from Google when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.
+
+</p>
+
+
+</body>
+</html>
