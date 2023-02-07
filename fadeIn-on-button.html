@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> fadeIn (nested function) </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $('button').click(function(){
+  $("#a1").fadeIn();
+  $("#a2").fadeIn("slow");
+  $("#a3").fadeIn(3000);
+ });
+});
+</script>
+</head>
+<body>
+
+<div id="a1" style="height:80px; width:70px; background-color: tomato; display:none;">
+
+</div>
+<br>
+
+<div id="a2" style="height:80px; width:70px; background-color:skyblue; display:none;">
+
+</div>
+<br>
+
+<div id="a3" style="height:80px; width:70px; background-color:grey; display:none;">
+
+</div>
+
+<button >click</button>
+
+
+
+
+<h3>display none laga hua h </h3>
+
+</body>
+</html>
