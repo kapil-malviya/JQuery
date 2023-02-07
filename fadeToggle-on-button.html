@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> fade toggle  </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $('button').click(function(){
+  $("#a1").fadeToggle();
+  // $("#a2").fadeToggle("slow");
+  $("#a2").fadeToggle("fast");
+  $("#a3").fadeToggle(3000);
+ });
+});
+</script>
+</head>
+<body>
+<div style="border:1px solid green; height:300px;">
+<div id="a1" style="height:80px; width:70px; background-color: tomato;">
+
+</div>
+<br>
+
+<div id="a2" style="height:80px; width:70px; background-color:skyblue;">
+
+</div>
+<br>
+
+<div id="a3" style="height:80px; width:70px; background-color:grey;">
+
+</div>
+</div>
+<button >click</button>
+
+
+
+
+<h3>display none hataya hua h </h3>
+
+</body>
+</html>
