@@ -1,0 +1,31 @@
+
+<!--   animate()
+  sliding of whole div to left on click of button 
+ -->
+ 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> animate (position sliding) on click of button</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('button').click(function(){
+$('div').animate({left:'450px'});
+
+});
+});
+</script>
+
+</head>
+<body>
+<button>click here to animate</button>
+
+
+<div style="background-color:tomato; height:190px; width:180px; position: absolute;">kapil malviya</div>
+
+</body>
+</html>
