@@ -1,0 +1,36 @@
+
+
+<!--   animate()
+  increasing size of text on click of button 
+ -->
+ 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> animate (text size increasing) on click of button </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('button').click(function(){
+$('p').animate({
+fontSize:'3em'}, 'slow');
+
+});
+});
+</script>
+
+</head>
+<body>
+<button>click here to animate</button>
+
+
+<div >
+<p>kapil malviya</p></div>
+
+</body>
+</html>
