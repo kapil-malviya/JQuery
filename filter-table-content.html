@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> filter(), filter content of table on search </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#xx").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#table tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+<style type="text/css">
+
+table{font-family: sans-serif; border-collapse: collapse; width:100%;}
+td,th{border:1px solid; padding:5px; text-align: center;}
+tr:nth-child(even){background-color:burlywood; }
+tr:nth-child(odd){background-color:lightseagreen; }
+th{background-color:lightgray;}
+input{width:250px; height:22px; margin:10px; border:1px solid;}
+</style>
+
+</head>
+<body>
+
+<input type="text" name="" placeholder="    search name" id="xx">
+
+<div>
+<table>
+
+<thead>
+<tr>
+
+  <th> First name </th>
+  <th> Last name </th>
+  <th> Email </th>
+
+</tr>
+</thead>
+
+<tbody id="table">
+
+<tr>
+  <td> Sudeep  </td>
+  <td> Gurjar </td>
+  <td> sudeep@gmail.com </td>
+</tr>
+
+<tr>
+  <td> Aadi  </td>
+  <td> Sharma </td>
+  <td> aadis@gmail.com </td>
+</tr>
+
+<tr>
+  <td> Adani  </td>
+  <td> Gautam </td>
+  <td> gautamadani@gmail.com </td>
+</tr>
+
+
+<tr>
+  <td> Mota Bhai </td>
+  <td> Ambani </td>
+  <td> motabhaiambani@gmail.com </td>
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</body>
+</html>
